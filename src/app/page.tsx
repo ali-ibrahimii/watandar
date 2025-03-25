@@ -1,16 +1,6 @@
-"use client";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+"use client"
 
 export default function Home() {
-  const pathname = usePathname()
-  const [isClient, setIsClient] = useState(false)
-
-  useEffect(()=> {
-    setIsClient(true)
-  }, [])
-
-  if(!isClient) return null;
 
   return (
     <div className="relative w-screen h-screen border">
