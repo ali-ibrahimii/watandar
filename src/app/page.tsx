@@ -1,8 +1,10 @@
 "use client";
 import Navbar from "../../components/Navbar";
-import Menu from '../../components/Menu'
+import Menu from "../../components/Menu";
+import LanguageSelector from "../../components/LanguageSelector";
 
 export default function Home() {
+
   return (
     <div className="relative w-full h-screen bg-gray-800 text-white">
       {/* باکس محتوا */}
@@ -14,7 +16,9 @@ export default function Home() {
 
         {/* عنوان رستوران */}
         <h1 className="text-[20px] font-bold">Restaurant Watandar</h1>
+        
         <div>
+          <LanguageSelector />
           <Navbar />
           <Menu />
         </div>
