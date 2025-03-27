@@ -1,5 +1,5 @@
 import React from 'react'
-import { menuItems, translations } from '../src/app/data/menuItems'
+import { menuItems } from '../src/app/data/menuItems'
 import { useLanguage } from '@/app/context/LanguageContext'
 
 const MenuCard = () => {
@@ -13,7 +13,7 @@ const MenuCard = () => {
           <div className="absolute -top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full w-24 h-24">
             <img
               src={item.image}
-              alt={item.name}
+              alt={item.name[language]}
               className="rounded-full w-full h-full bg-cover shadow-lg"
             />
           </div>
