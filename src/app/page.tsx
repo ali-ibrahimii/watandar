@@ -1,5 +1,6 @@
 "use client";
 import Navbar from "../../components/Navbar";
+import Menu from '../../components/Menu'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <h1 className="text-[20px] font-bold">Restaurant Watandar</h1>
         <div>
           <Navbar />
+          <Menu />
         </div>
       </div>
     </div>
