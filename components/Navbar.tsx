@@ -6,10 +6,10 @@ import { useLanguage } from '@/app/context/LanguageContext'
 const Navbar = () => {
   const {language} = useLanguage()
   return (
-    <nav className='space-x-4'>
-        <Link href="/food">{translations[language].food}</Link>
-        <Link href="/drink">{translations[language]?.drink}</Link>
-        <Link href="/salad">{translations[language]?.salad}</Link>
+    <nav className='space-x-4 font-bold relative'>
+        <Link className='sticky' href="/food">{translations[language].food}</Link>
+        <Link className='sticky' href="/drink">{translations[language]?.drink}</Link>
+        <Link className='sticky' href="/salad">{translations[language]?.salad}</Link>
     </nav>
   )
 }

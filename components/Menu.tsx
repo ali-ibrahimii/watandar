@@ -19,7 +19,7 @@ const MenuCard = () => {
           </div>
 
           {/* اطلاعات غذا */}
-          <div className="bg-gray-700 w-full h-50 p-5 rounded-xl pt-16 shadow-lg">
+          <div className="w-full h-50 p-5 rounded-xl pt-16 shadow-lg">
             <h3 className="text-[15px] font-semibold text-center">
               {item.name[language]}
             </h3>

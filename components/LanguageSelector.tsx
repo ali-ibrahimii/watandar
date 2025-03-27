@@ -1,24 +1,25 @@
 "use client";
 import { useLanguage } from "../src/app/context/LanguageContext";
+import { Icon } from '@iconify/react';
 
 export default function LanguageSelector() {
   const { language, setLanguage } = useLanguage();
 
   return (
-    <div className="flex items-center gap-2 p-2">
-      <label htmlFor="language-select" className="text-sm font-semibold">
-        🌍 زبان:
+    <div className="relative">
+      <label htmlFor="language-select" className="cursor-pointer flex justify-center items-center rounded-full bg-gray-600 p-1 text-sm w-18">
+      <Icon icon="mdi:web" height="24" />
+        <select
+          id="language-select"
+          value={language}
+          onChange={(e) => setLanguage(e.target.value as "fa" | "en" | "ar")}
+          className="rounded-full focus:outline-none text-white"
+        >
+          <option className="bg-black" value="fa">Fa</option>
+          <option className="bg-black" value="en">Ar</option>
+          <option className="bg-black" value="ar">En</option>
+        </select>
       </label>
-      <select
-        id="language-select"
-        value={language}
-        onChange={(e) => setLanguage(e.target.value as "fa" | "en" | "ar")}
-        className="p-2 border rounded-md bg-gray-100 text-black"
-      >
-        <option value="fa">🇮🇷 فارسی</option>
-        <option value="en">🇺🇸 English</option>
-        <option value="ar">🇸🇦 العربية</option>
-      </select>
     </div>
   );
 }
