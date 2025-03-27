@@ -149,5 +149,21 @@ export const menuItems = [
     image: "food.pic.png",
     weight: "300gr",
   },
+  {
+    id: 9,
+    name: {
+      fa: "کباب کوبیده",
+      ar: "كباب كوبيدة",
+      en: "Kebab Koobideh",
+    },
+    description: {
+      fa: "کباب کوبیده خوشمزه و لذیذ، پخته شده از گوشت تازه.",
+      ar: "كباب كوبيدة لذيذ مصنوع من لحم طازج.",
+      en: "Delicious Koobideh kebab made from fresh meat.",
+    },
+    price: "300 T",
+    image: "food.pic.png",
+    weight: "300gr",
+  },
 ];
 
