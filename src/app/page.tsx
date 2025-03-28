@@ -1,27 +1,23 @@
 "use client";
-import Navbar from "../../components/Navbar";
-import Menu from "../../components/Menu";
-import LanguageSelector from "../../components/LanguageSelector";
 import SlideButton from "../../components/SlideButton"
 
 export default function Home() {
 
   return (
-    <div className="relative w-full h-screen bg-[#06141b] text-white">
-      {/* باکس محتوا */}
-      <div className="absolute inset-0 flex flex-col items-center text-center space-y-2 bg-amber-700">
-        {/* لوگو */}
-        <div>
-          <img className="w-full h-screen" src="bg.jpg" alt="Watandar Logo" />
+    <div className="relative w-full h-screen bg-black">
+      <div className="absolute inset-0 flex flex-col items-center text-center">
+        <div className="relative">
+          <video 
+          playsInline autoPlay muted loop 
+          className="w-full h-full inset-0"
+          src="background.mp4"></video>
+          <div className="absolute bg-gradient-to-l from-black to-transparent z-20"></div>
         </div>
-        {/* عنوان رستوران */}
-        <h1 className="text-[20px] font-bold">Restaurant Watandar</h1>
-        {/* کامپوننت */}
-        <div>
-          <LanguageSelector />
+        {/* <div>
+          <img className="w-full h-screen" src="bg.jpg" alt="background" />
+        </div> */}
+        <div className="absolute bottom-1/12">
           <SlideButton />
-          <Navbar />
-          <Menu />
         </div>
       </div>
     </div>
