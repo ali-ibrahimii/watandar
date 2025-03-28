@@ -9,7 +9,7 @@ export default function Home() {
         <div className="relative">
           <video 
           playsInline autoPlay muted loop 
-          className="w-full h-full inset-0"
+          className="w-full h-screen inset-0"
           src="background.mp4"></video>
           <div className="absolute bg-gradient-to-l from-black to-transparent z-20"></div>
         </div>
