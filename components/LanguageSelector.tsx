@@ -16,8 +16,8 @@ export default function LanguageSelector() {
           className="rounded-full focus:outline-none text-white"
         >
           <option className="bg-black" value="fa">Fa</option>
-          <option className="bg-black" value="en">Ar</option>
-          <option className="bg-black" value="ar">En</option>
+          <option className="bg-black" value="ar">Ar</option>
+          <option className="bg-black" value="en">En</option>
         </select>
       </label>
     </div>

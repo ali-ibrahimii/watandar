@@ -17,7 +17,7 @@ export const translations = {
     menu: "Menu",
     salad: "Salad",
     drink: "Drink",
-    food: "food",
+    food: "Food",
   },
 };
 export const menuItems = [

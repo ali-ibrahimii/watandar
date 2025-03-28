@@ -2,25 +2,24 @@
 import Navbar from "../../components/Navbar";
 import Menu from "../../components/Menu";
 import LanguageSelector from "../../components/LanguageSelector";
+import SlideButton from "../../components/SlideButton"
 
 export default function Home() {
 
   return (
-    <div className="relative w-full h-screen bg-black text-white">
-        <div className="absolute top-0 left-0 border w-full h-45 bg-amber-500"></div>
+    <div className="relative w-full h-screen bg-[#06141b] text-white">
       {/* باکس محتوا */}
-      <div className="absolute inset-0 flex flex-col items-center pt-5 justify-start text-center space-y-4">
+      <div className="absolute inset-0 flex flex-col items-center text-center space-y-2 bg-amber-700">
         {/* لوگو */}
         <div>
-          <img className="w-20" src="logo.png" alt="Watandar Logo" />
+          <img className="w-full h-screen" src="bg.jpg" alt="Watandar Logo" />
         </div>
-
-
         {/* عنوان رستوران */}
         <h1 className="text-[20px] font-bold">Restaurant Watandar</h1>
-        
+        {/* کامپوننت */}
         <div>
           <LanguageSelector />
+          <SlideButton />
           <Navbar />
           <Menu />
         </div>
