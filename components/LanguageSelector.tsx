@@ -7,7 +7,7 @@ export default function LanguageSelector() {
 
   return (
     <div className="relative">
-      <label htmlFor="language-select" className="cursor-pointer flex justify-center items-center rounded-full bg-gray-600 p-1 text-sm w-18">
+      <label htmlFor="language-select" className="cursor-pointer flex justify-center items-center rounded-full bg-blue-900 p-1 text-sm w-18">
       <Icon icon="mdi:web" height="24" />
         <select
           id="language-select"
