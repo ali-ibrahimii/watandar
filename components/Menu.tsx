@@ -21,22 +21,12 @@ export default function App() {
       >
         {menuItems.map((items, index) => (
           <SwiperSlide key={index} className="swiper-slide">
-            <img
-              src={items.image}
-              alt={items.name[language]}
-              className="swiper-slide-img"
-            />
+            <img src={items.image} alt={items.name[language]} className="swiper-slide-img" />
 
             {/* Content */}
-            <h1 className="text-white font-bold text-center mt-16">
-              {items.name[language]}
-            </h1>
-            <p className="text-sm text-gray-300 text-center mt-1">
-              {items.description[language]}
-            </p>
-            <p className="text-orange-400 font-bold text-center mt-2">
-              {items.price} T
-            </p>
+            <h1 className="text-white font-bold text-center mt-16">{items.name[language]}</h1>
+            <p className="text-sm text-gray-300 text-center mt-1">{items.description[language]}</p>
+            <p className="text-orange-400 font-bold text-center mt-2">{items.price} T</p>
           </SwiperSlide>
         ))}
       </Swiper>

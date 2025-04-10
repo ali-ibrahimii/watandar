@@ -1,5 +1,6 @@
 "use client";
-// import Navbar from "../../components/Navbar";
+
+
 import LanguageSelector from '../../components/LanguageSelector';
 import MenuCard from "../../components/Menu";
 
