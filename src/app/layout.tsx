@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./style/globals.css";
 import { LanguageProvider } from "./context/LanguageContext";
 
 
